@@ -49,7 +49,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_show(self, arg):
         """
-        Print the string representation of an instance based on the class name and id.
+        Print the string representation of an instance based on class name and id.
         """
         args = arg.split()
         if not args:
@@ -90,7 +90,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_all(self, arg):
         """
-        Print all string representation of all instances based or not on the class name.
+        Print all string representation of all instances based or not on class name.
         """
         args = arg.split()
         if args and args[0] not in models.classes:
@@ -104,7 +104,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_update(self, arg):
         """
-        Update an instance based on the class name and id by adding or updating attribute.
+        Update an instance based on the class name and id.
         """
         args = arg.split()
         if not args:

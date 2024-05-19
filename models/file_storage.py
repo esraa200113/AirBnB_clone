@@ -9,7 +9,7 @@ from models.base_model import BaseModel
 
 class FileStorage:
     """
-    Serializes instances to a JSON file and deserializes JSON file to instances.
+    Serializes instances to a JSON file and deserializes to instances.
     """
     __file_path = "file.json"
     __objects = {}
@@ -46,4 +46,3 @@ class FileStorage:
                 self.__objects[key] = BaseModel(**value)
         except FileNotFoundError:
             pass
-
